@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1>Tic Tac Toe</h1>
+    <form id="nameForm">
+        <label for="player1">Player 1 Name:</label>
+        <input type="text" id="player1" required>
+        <br>
+        <label for="player2">Player 2 Name:</label>
+        <input type="text" id="player2" required>
+        <br>
+        <button type="submit">Start Game</button>
+    </form>
+    <div id="gameBoard" class="hidden">
+        <div id="message"></div>
+        <table>
+            <tr>
+                <td id="cell0" onclick="makeMove(0)"></td>
+                <td id="cell1" onclick="makeMove(1)"></td>
+                <td id="cell2" onclick="makeMove(2)"></td>
+            </tr>
+            <tr>
+                <td id="cell3" onclick="makeMove(3)"></td>
+                <td id="cell4" onclick="makeMove(4)"></td>
+                <td id="cell5" onclick="makeMove(5)"></td>
+            </tr>
+            <tr>
+                <td id="cell6" onclick="makeMove(6)"></td>
+                <td id="cell7" onclick="makeMove(7)"></td>
+                <td id="cell8" onclick="makeMove(8)"></td>
+            </tr>
+        </table>
+        <button onclick="resetGame()">Reset Game</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
